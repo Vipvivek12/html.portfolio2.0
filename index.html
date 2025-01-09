@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    .profile-pic {
+      border: 5px solid #007bff; /* Blue border */
+      border-radius: 10px; /* oval corner */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow */
+    }
+
+    /* Styles for the ordered list with visual enhancements */
+    ol {
+      list-style-type: none; /* Remove default bullet points */
+      counter-reset: my-counter; /* Create a counter */
+      padding: 0;
+      margin: 0; /* Remove default margins */
+    }
+
+    ol li {
+      position: relative;
+      padding-left: 30px; /* Adjust for counter width and indentation */
+      margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    ol li::before {
+      content: counter(my-counter) ". "; /* Display counter */
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px; /* Adjust for counter width */
+      text-align: right;
+      font-weight: bold; /* Make counter text bolder */
+    }
+
+    ol li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calc(100% + 20px); /* Adjust for counter width */
+      border-bottom: 1px solid #ccc;
+      /* Add a small line at the beginning for visual connection */
+      border-left: 5px solid transparent;
+      border-left-style: dashed; /* Create a dashed line */
+    }
+
+    ol li:last-child::after {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="./about.html">About Me</a></li>
+        <li><a href="./project file/webpages  linking project/public/index.html">Projects</a>
+          <p>basically till this project i only completed html tags . so , and my tutor told me to build a 24x7 live capstone by using each and every tags of html.   following tags used in this project are given below:</p>
+          <ol>
+            <li>header</li>
+            <li>nav</li>
+            <li>section</li>
+            <li>footer</li>
+            <li>h1-h3</li>
+            <li>p</li>
+            <li>img</li>
+            <li>ul</li>
+            <li>li</li>
+            <li>a</li>
+            <li>iframe</li>
+            <li>style</li>
+          </ol>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="profile"></div>
+    <img src="photo_6223980213105179452_x.jpg" alt="Profile Picture" class="profile-pic">
+    <h3>Education</h3>
+    <p>Bachelor of Science in Computer Science</p>
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </div>
+  <p>.</p>
+  My name is Vivek Kumar, and I am 23 years old. I completed my schooling from Manav Bharti National School, Bodhgaya, up to 12th grade through CBSE. I graduated with a Bachelor
